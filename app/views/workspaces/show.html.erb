@@ -1,0 +1,21 @@
+<h1>Workspaces#show</h1>
+<p>Find me in app/views/workspaces/show.html.erb</p>
+
+<%= link_to 'create a new category', new_category_path %>
+<br>
+<% @categories.each do |category| %>
+  <%= category.title  %>
+  <%= link_to 'New template', new_category_template_path(category) %>
+  <%= link_to 'Delete(category)', category_path(category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+  <% category.templates.each do |template| %>
+    <ul>
+      <li><%= template.title %><%= link_to 'Delete', template_path(template), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></li>
+    </ul>
+  <% end %>
+  <br>
+<% end %>
+
+
+<div>
+  <%= render 'categories/form', category: @category %>
+</div>
