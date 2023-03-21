@@ -1,5 +1,11 @@
-<%= simple_form_for([category, template]) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :content %>
+
+<%= simple_form_for template, data: {turbo_frame: '_top'} do |f| %>
+  <% if category %>
+    <%= f.association :category, collection: current_user.categories, selected: category.id %>
+  <% else %>
+    <%= f.association :category, collection: current_user.categories %>
+  <% end %>
+  <%= f.input :title, label: false, placeholder: "Type your title" %>
+  <%= f.input :content, as: :rich_text_area, label: :content, placeholder: "Type your content here" %>
   <%= f.submit %>
 <% end %>

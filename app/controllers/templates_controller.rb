@@ -8,27 +8,36 @@ class TemplatesController < ApplicationController
 
   def create
     @template = Template.new(template_params)
-    @category = Category.find(params[:category_id])
-    @template.category = @category
-    if @template.save
-      redirect_to workspace_path
-    else
-      render :new, status: :unprocessable_entity
+    respond_to do |format|
+      if @template.save
+        format.html { redirect_to workspace_path }
+        format.turbo_stream # look in views/templates/create.turbo_stream.erb
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.turbo_stream
+      end
     end
   end
 
   def edit
-    @category = Category.find(params[:category_id])
   end
 
   def update
-    @category = Category.find(params[:category_id])
-    @template.category = @category
-    if @template.update(template_params)
-      redirect_to workspace_path
-    else
-      render :edit, status: :unprocessable_entity
+    respond_to do |format|
+      if @template.update(template_params)
+        format.html { redirect_to workspace_path, notice: "Template is successfully updated"}
+        format.turbo_stream
+      else
+        format.html { render :edit, status: :unprocessable_entity }
+        format.turbo_stream
+      end
+
     end
+    # if @template.update(template_params)
+    #   redirect_to workspace_path
+    # else
+    #   render :edit, status: :unprocessable_entity
+    # end
   end
 
   def destroy
@@ -37,7 +46,6 @@ class TemplatesController < ApplicationController
     redirect_to workspace_path, status: :see_other
   end
 
-
   private
 
   def set_template
@@ -45,6 +53,6 @@ class TemplatesController < ApplicationController
   end
 
   def template_params
-    params.require(:template).permit(:title, :content)
+    params.require(:template).permit(:title, :content, :category_id)
   end
 end

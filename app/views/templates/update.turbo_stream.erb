@@ -1,0 +1,4 @@
+<%# turbo_stream.update "template#{@template.id}" %>
+<%# turbo_stream.replace clearance, partial: "clearances/clearance", locals: { title: "Hello" } %>
+
+<%= turbo_stream.replace 'template_menu', partial: 'workspaces/template_menu', locals: { categories: current_user.categories } %>

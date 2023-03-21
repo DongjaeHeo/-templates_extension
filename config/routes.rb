@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :categories do
-    resources :templates, except: [:destroy]
+    resources :templates, only: [:create, :new]
   end
 
-  resources :templates, only: [:destroy]
+  resources :templates, only: [:create, :update]
 end
