@@ -17,14 +17,12 @@ gem 'simple_token_authentication'
 #pundit
 gem 'pundit', '~> 2.3'
 #cloudinary
-gem "dotenv-rails", groups: [:development, :test]
 
 gem "cloudinary"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
-gem "devise"
 # Bundle a transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
 
