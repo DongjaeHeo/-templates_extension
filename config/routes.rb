@@ -10,5 +10,5 @@ Rails.application.routes.draw do
     resources :templates, only: [:create, :new]
   end
 
-  resources :templates, only: [:create, :update]
+  resources :templates
 end
