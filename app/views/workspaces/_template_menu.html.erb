@@ -3,7 +3,7 @@
   <% categories.each do |category|  %>
     <div data-controller="toggle">
 
-      <div data-action="click->toggle#open_list"><%= category.title %></div>
+      <div data-action="click->toggle#open_list" style="cursor: pointer"><%= category.title %></div>
       <%= link_to 'New template', new_category_template_path(category), data: {turbo_frame: :workspace_content} %>
       <%= link_to 'Delete(category)', category_path(category), data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
 

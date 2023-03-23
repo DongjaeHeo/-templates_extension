@@ -6,6 +6,6 @@
     <%= f.association :category, collection: current_user.categories %>
   <% end %>
   <%= f.input :title, label: false, placeholder: "Type your title" %>
-  <%= f.input :content, as: :rich_text_area, label: :content, placeholder: "Type your content here" %>
+  <%= f.input :content, as: :rich_text_area, label: :content, placeholder: "Type your content here", input_html: { class: "content-input" } %>
   <%= f.submit %>
 <% end %>
