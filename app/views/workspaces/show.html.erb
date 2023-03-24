@@ -10,7 +10,6 @@
   </div>
   <div style="background: white; padding: 40px;" class ="min-vh-100 vw-100">
     <%= turbo_frame_tag :workspace_content do %>
-      <p>Initial content to display for workspace</p>
       <%= render 'templates/form', template: @template, category: nil %>
     <% end %>
   </div>
