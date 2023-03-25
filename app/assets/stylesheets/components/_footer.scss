@@ -1,0 +1,29 @@
+.footer-container {
+  // background-color: #D279D5;
+  // background-image: image-url('purple-background.jpg');
+  background-image: image-url('abstr_bubble.jpg');
+  // MAKES BACKGROUND A DARKER TINT
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  background-size: cover;
+  height: 65px;
+  // STICKY POS TO BOTTOM
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  text-align: center;
+  p {
+    margin: 0px;
+  }
+}
+
+.fa-heart {
+  color: red;
+}
