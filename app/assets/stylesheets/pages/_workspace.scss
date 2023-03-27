@@ -1,0 +1,42 @@
+.menu {
+  background-color: white;
+  margin-right: 20px !important;
+  margin-left: 5px;
+  min-height: 100vh;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #313131;
+}
+
+.content {
+  background: white;
+  padding: 40px;
+  min-height: 100vh;
+  min-width: 85vw;
+  border-radius: 5px;
+  margin-right: 5px;
+  color: #313131;
+}
+
+body {
+  background-image: url('abstr_bubble.jpg');
+}
+
+.fa-solid {
+  color: #604fb2;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.workspace-header {
+  color: #313131;
+}
+
+a {
+  font-size: small;
+}
+
+.form-select {
+  color: black;
+  opacity: 0.5;
+}
