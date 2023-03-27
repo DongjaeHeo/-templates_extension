@@ -6,24 +6,33 @@
   </div>
                                   <%# Image carousel %>
   <div class="image-carousel">
-    <button class="carousel_button"></button>
+  <%# LEFT ARROW %>
+    <button class="carousel-button button-left">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
       <div class="carousel-track-container">
         <ul class="carousel-track">
           <li class="carousel-slide">
-            <%# <img src="" alt=""> %>
-            <%# <%= image_tag "coffe.jpg", height: '200px', width: '180px' %>
+            <%= image_tag "coffe.jpg", class: 'carousel-image', height: 200, width: 180 %>
           </li>
           <li class="carousel-slide">
-            <%# <img src="" alt=""> %>
-            <%# <%= image_tag "coffe.jpg" %>
+            <%= image_tag "coffe.jpg", class: 'carousel-image', height: 200, width: 180 %>
           </li>
           <li class="carousel-slide">
-            <%# <img src="" alt=""> %>
-            <%# <%= image_tag "coffe.jpg" %>
+            <%= image_tag "coffe.jpg", class: 'carousel-image', height: 200, width: 180 %>
           </li>
         </ul>
       </div>
-    <button class="carousel_button"></button>
+      <%# RIGHT ARROW %>
+    <button class="carousel-button button-right">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <%# NAV CIRCLES BELOW CAROUSEL %>
+    <div class="carousel-nav">
+      <button class="carousel-indicator current-slide"></button>
+      <button class="carousel-indicator"></button>
+      <button class="carousel-indicator"></button>
+    </div>
   </div>
 </div>
 
