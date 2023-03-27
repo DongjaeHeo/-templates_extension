@@ -1,36 +1,87 @@
+                                  <%# Banner %>
 <div class="main-banner">
   <div class="main-text">
     <h1>Templates Extension</h1>
     <p>All your templates, Anywhere</p>
   </div>
-  <div class="banner-picture">
+                                  <%# Image carousel %>
+  <div class="image-carousel">
+    <button class="carousel_button"></button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide">
+            <%# <img src="" alt=""> %>
+            <%# <%= image_tag "coffe.jpg", height: '200px', width: '180px'   %> %>
+          </li>
+          <li class="carousel-slide">
+            <%# <img src="" alt=""> %>
+            <%# <%= image_tag "coffe.jpg" %> %>
+          </li>
+          <li class="carousel-slide">
+            <%# <img src="" alt=""> %>
+            <%# <%= image_tag "coffe.jpg" %> %>
+          </li>
+        </ul>
+      </div>
+    <button class="carousel_button"></button>
   </div>
 </div>
+
+
+
+                                  <%# Center text %>
 <div class="secondary-content">
   <p>3 easy steps</p>
 </div>
+                                  <%# Card container %>
 <div class="cards-container">
+                                  <%# Card 1 %>
   <div class="info-card">
-    <div class="card-img">
-      <img src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80" alt="">
-    </div>
-    <div class="card-text">
-      <p><strong>Create your template!</strong></p>
-    </div>
-  </div>
-    <div class="info-card">
-    <div class="card-img">
-      <img src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80" alt="">
-    </div>
-    <div class="card-text">
-      <p><strong>Download extension!</strong></p>
-    </div>
-  </div>
-    <div class="info-card">
-      <img src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=967&q=80" alt="">
-      <div class="card-text">
-        <p><strong>Import your template!</strong></p>
+    <div class="card-wrapper">
+      <div class="front">
+        <div class="card-number">
+          <h1>1</h1>
+        </div>
+        <div class="card-text">
+          <p><strong>Create your template!</strong></p>
+        </div>
       </div>
+      <div class="back">
+        <p>This is the back of my card</p>
+      </div>
+    </div>
+  </div>
+                                  <%# Card 2 %>
+  <div class="info-card">
+    <div class="card-wrapper">
+      <div class="front">
+        <div class="card-number">
+          <h1>2</h1>
+        </div>
+        <div class="card-text">
+          <p><strong>Download extension!</strong></p>
+        </div>
+      </div>
+      <div class="back">
+        <p>This is the back of my card</p>
+      </div>
+    </div>
+  </div>
+                                  <%# Card 3 %>
+  <div class="info-card">
+    <div class="card-wrapper">
+      <div class="front">
+        <div class="card-number">
+          <h1>3</h1>
+        </div>
+        <div class="card-text">
+          <p><strong>Import your template!</strong></p>
+        </div>
+      </div>
+      <div class="back">
+        <p>This is the back of my card</p>
+      </div>
+    </div>
   </div>
 </div>
 <%# <div class="secondary-content">
