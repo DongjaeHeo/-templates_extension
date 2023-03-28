@@ -1,7 +1,7 @@
 .footer-container {
-  // background-color: #D279D5;
-  // background-image: image-url('purple-background.jpg');
-  background-image: image-url('abstr_bubble.jpg');
+  background-color: $purple;
+  // background-image: image-url('abstr_bubble.jpg');
+
   // MAKES BACKGROUND A DARKER TINT
   // background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   background-size: cover;
@@ -27,5 +27,5 @@
 }
 
 .fa-heart {
-  color: red;
+  color: rgb(255, 255, 255);
 }

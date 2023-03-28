@@ -1,6 +1,6 @@
 .main-banner {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   // POSITIONING!!
   position: sticky;
@@ -8,11 +8,14 @@
 
   width: 100%;
   height: 300px;
-  // background-image: image-url('purple-background.jpg');
-  background-image: image-url('abstr_bubble.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: $purple;
+  // BACKGROUND IMAGE
+  // background-image: image-url('abstr_bubble.jpg');
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+
+  // SHADE TINT ON BANNER
   // background: transparent;
   // background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   h1 {
