@@ -4,6 +4,11 @@
   min-width: 16vw;
   padding: 1rem;
   color: white;
+  .fa-solid {
+    color: white;
+    padding: 1px;
+    font-size: 12px;
+  }
 }
 
 .content {
@@ -15,11 +20,6 @@
   border-radius: 6px;
 }
 
-.fa-solid {
-  color: white;
-  padding: 1px;
-  font-size: 12px;
-}
 
 .fa-folder-plus {
   color: white;
@@ -40,9 +40,9 @@ a {
   opacity: 0.5;
 }
 
-body {
-  height: 100%;
-}
+// body {
+//   height: 100%;
+// }
 
 .template-item {
   color: white;

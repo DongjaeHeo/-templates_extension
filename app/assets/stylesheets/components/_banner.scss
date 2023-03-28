@@ -8,7 +8,8 @@
 
   width: 100%;
   height: 300px;
-  background-color: $purple;
+  // background-color: $purple;
+  background: linear-gradient(62deg, rgba(96,79,178,1) 40%, rgba(174,154,196,1) 100%);
   // BACKGROUND IMAGE
   // background-image: image-url('abstr_bubble.jpg');
   // background-size: cover;
@@ -21,14 +22,14 @@
   h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: $text-gray;
+    color: white;
   }
 
   p {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     font-size: 20px;
-    color: $text-gray;
+    color: white;
   }
 }
 

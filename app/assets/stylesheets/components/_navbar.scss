@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background-color: $navbarpurple;
+  background-color: $purple;
+  opacity: 0.97;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,10 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.fa-message {
+  color: white;
+  font-size: 29px;
+  margin-left: 10px;
 }
