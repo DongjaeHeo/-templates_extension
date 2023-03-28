@@ -1,19 +1,19 @@
-<div class="text-center">
-  <h1><%= current_user.first_name %>'s workspace</h1>
-</div>
-<div class="d-flex">
-  <div class="min-vh-100 p-3" >
-      <%= render 'workspaces/template_menu', categories: @categories %>
-    <div >
+<div class="d-flex mt-4">
+  <div class="menu">
+    <div class="new-category mt-4">
       <%= render 'categories/form', category: @category%>
     </div>
+    <br>
+    <br>
+    <h5 class="workspace-header">Your categories</h5>
+    <div class="template-list">
+      <%= render 'workspaces/template_menu', categories: @categories %>
+    </div>
   </div>
-  <div style="background: white; padding: 40px;" class ="min-vh-100 vw-100">
+  <div class="content">
     <%= turbo_frame_tag :workspace_content do %>
-      <p>Initial content to display for workspace</p>
       <%= render 'templates/form', template: @template, category: nil %>
     <% end %>
   </div>
 </div>
-<%# <%= link_to 'create a new category', new_category_path %>
 <br>
