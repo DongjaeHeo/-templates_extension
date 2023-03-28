@@ -3,8 +3,13 @@
     <div class="template-list">
       <%= render 'workspaces/template_menu', categories: @categories %>
     </div>
-    <div class="new-category mt-4">
-      <%= render 'categories/form', category: @category%>
+    <br>
+    <br>
+    <div data-controller="toggle">
+      <button type="button" class="btn btn-primary" data-action="click->toggle#open_form"><i class="fa-solid fa-plus"></i> Create Category</button>
+      <div class="d-none new-category mt-4" data-toggle-target="form">
+        <%= render 'categories/form', category: @category%>
+      </div>
     </div>
   </div>
   <div class="content">

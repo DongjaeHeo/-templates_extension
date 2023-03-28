@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => { :sessions => "sessions" }
-
   root to: "pages#home"
+
   get 'workspace', to: 'workspaces#show'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -18,5 +18,4 @@ Rails.application.routes.draw do
       resources :categories, only: [:index]
     end
   end
-
 end

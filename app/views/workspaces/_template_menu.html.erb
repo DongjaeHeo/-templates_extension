@@ -20,18 +20,22 @@
         <% category.templates.each do |template| %>
           <ul>
             <li>
-            <div class="d-flex justify-content-between">
-              <%= link_to edit_template_path(template), data: {turbo_frame: :workspace_content}  do %>
-                <div class="template-item"><%= template.title %></div>
-              <% end %>
-            <br>
-              <%= link_to edit_template_path(template), data: {turbo_frame: :workspace_content}  do %>
-                <i class="fa-solid fa-pen"></i>
-              <% end %>
-              <%= link_to template_path(template), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
-                <i class="fa-solid fa-trash ml-3"></i>
-              <% end %>
+            <div class="d-flex justify-content-between gap-8">
+              <div>
+                <%= link_to edit_template_path(template), data: {turbo_frame: :workspace_content}  do %>
+                  <div class="template-item"><%= template.title %></div>
+                <% end %>
               </div>
+              <br>
+              <div>
+                <%= link_to edit_template_path(template), data: {turbo_frame: :workspace_content}  do %>
+                  <i class="fa-solid fa-pen"></i>
+                <% end %>
+                <%= link_to template_path(template), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+                  <i class="fa-solid fa-trash ml-3"></i>
+                <% end %>
+              </div>
+            </div>
             </li>
           </ul>
         <% end %>

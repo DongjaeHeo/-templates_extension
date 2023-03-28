@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import AutosaveController from "./autosave_controller"
+application.register("autosave", AutosaveController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
