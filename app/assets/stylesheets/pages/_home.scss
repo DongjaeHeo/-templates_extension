@@ -3,15 +3,25 @@ a {
   text-decoration: none;
   color: #313131;
 }
+
 body {
-  // background-image: image-url('abstr_bubble.jpg');
   background: whitesmoke;
-  background-size: cover;
-  background-position: center;
+
+  // background-image: image-url('abstr_bubble.jpg');
+  // background-size: cover;
+  // background-position: center;
+
   // makes background not scroll
-  background-attachment: fixed;
+  // background-attachment: fixed;
   height: 125vh;
-  position: relative;
+}
+
+// TO MAKE FOOTER ALWAYS STICK TO BOTTOM
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 125vh;
 }
 
 a {
