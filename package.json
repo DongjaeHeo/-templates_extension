@@ -7,7 +7,9 @@
     "@popperjs/core": "^2.11.6",
     "@rails/actiontext": "^7.0.4-3",
     "bootstrap": "^5.2.3",
+    "lodash.debounce": "^4.0.8",
     "stimulus-dropdown": "^2.1.0",
+    "stimulus-rails-autosave": "^4.1.1",
     "trix": "^2.0.4",
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1"

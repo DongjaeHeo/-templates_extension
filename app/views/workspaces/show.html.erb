@@ -1,13 +1,15 @@
-<div class="d-flex mt-4">
+<div class="d-flex">
   <div class="menu">
-    <div class="new-category mt-4">
-      <%= render 'categories/form', category: @category%>
+    <div class="template-list">
+      <%= render 'workspaces/template_menu', categories: @categories %>
     </div>
     <br>
     <br>
-    <h5 class="workspace-header">Your categories</h5>
-    <div class="template-list">
-      <%= render 'workspaces/template_menu', categories: @categories %>
+    <div data-controller="toggle">
+      <button type="button" class="btn btn-primary" data-action="click->toggle#open_form"><i class="fa-solid fa-plus"></i> Create Category</button>
+      <div class="d-none new-category mt-4" data-toggle-target="form">
+        <%= render 'categories/form', category: @category%>
+      </div>
     </div>
   </div>
   <div class="content">
