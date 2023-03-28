@@ -26,7 +26,7 @@ class TemplatesController < ApplicationController
     respond_to do |format|
       if @template.update(template_params)
         format.html { redirect_to workspace_path }
-        format.turbo_stream
+        format.turbo_stream { flash.now[:notice] = "Template updated." }
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.turbo_stream

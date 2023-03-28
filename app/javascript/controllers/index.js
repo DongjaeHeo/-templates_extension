@@ -4,11 +4,11 @@
 
 import { application } from "./application"
 
-import AutosaveController from "./autosave_controller"
-application.register("autosave", AutosaveController)
-
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import RemovalsController from "./removals_controller"
+application.register("removals", RemovalsController)
 
 import ToggleController from "./toggle_controller"
 application.register("toggle", ToggleController)
