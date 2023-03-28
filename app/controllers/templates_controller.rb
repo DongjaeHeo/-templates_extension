@@ -11,7 +11,7 @@ class TemplatesController < ApplicationController
     respond_to do |format|
       if @template.save
         format.html { redirect_to workspace_path }
-        format.turbo_stream # look in views/templates/create.turbo_stream.erb
+        format.turbo_stream { flash.now[:notice] = "Template created." }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.turbo_stream
@@ -25,8 +25,8 @@ class TemplatesController < ApplicationController
   def update
     respond_to do |format|
       if @template.update(template_params)
-        format.html { redirect_to workspace_path, notice: "Template is successfully updated"}
-        format.turbo_stream
+        format.html { redirect_to workspace_path }
+        format.turbo_stream { flash.now[:notice] = "Template updated." }
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.turbo_stream

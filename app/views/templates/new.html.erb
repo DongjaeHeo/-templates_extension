@@ -1,3 +1,7 @@
+<turbo-frame id="flash">
+  <%= render "shared/flashes" %>
+</turbo-frame>
+
 <%= turbo_frame_tag :workspace_content do %>
   <%= render 'form', category: @category, template: @template %>
 <% end %>

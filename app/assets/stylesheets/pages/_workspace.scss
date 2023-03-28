@@ -1,0 +1,101 @@
+.menu {
+  background-color: #604fb2;
+  min-height: 100vh;
+  min-width: 16vw;
+  padding: 1rem;
+  color: white;
+}
+
+.content {
+  background: white;
+  padding: 40px;
+  min-height: 100vh;
+  min-width: 84vw;
+  color: white;
+  border-radius: 6px;
+}
+
+.fa-solid {
+  color: white;
+  padding: 1px;
+  font-size: 12px;
+}
+
+.fa-folder-plus {
+  color: white;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.workspace-header {
+  color: white;
+}
+
+a {
+  font-size: small;
+}
+
+.form-select {
+  color: black;
+  opacity: 0.5;
+}
+
+body {
+  height: 100%;
+}
+
+.template-item {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+#category_title {
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.submit {
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  font-size: 12px;
+}
+
+.create {
+  border-radius: 10px;
+  background-color: transparent;
+  color: #313131;
+  border-color: #313131;
+  font-size: 15px;
+  border-width: 1px;
+}
+
+.templates-list {
+  margin-left: -30px;
+}
+
+.form-control.is-valid {
+  border: 1px solid #ced4da !important;
+  background-image: none !important;
+}
+
+.form-select.is-valid {
+  border: 1px solid #ced4da !important;
+  background-image: none !important;
+}

@@ -1,11 +1,12 @@
 
 <%= simple_form_for template, data: {turbo_frame: '_top'} do |f| %>
   <% if category %>
-    <%= f.association :category, collection: current_user.categories, selected: category.id %>
+    <%= f.association :category, prompt: "Select your category", label: false, collection: current_user.categories, selected: category.id, class: "category-dropdown" %>
   <% else %>
-    <%= f.association :category, collection: current_user.categories %>
+    <%= f.association :category, prompt: "Select your category", label: false, collection: current_user.categories, class: "category-dropdown" %>
   <% end %>
   <%= f.input :title, label: false, placeholder: "Type your title" %>
-  <%= f.input :content, as: :rich_text_area, label: :content, placeholder: "Type your content here", input_html: { class: "content-input" } %>
-  <%= f.submit %>
+  <%= f.input :content, as: :rich_text_area, placeholder: "Type your content here", input_html: { class: "content-input", }, label: false %>
+  <%# <%= f.check_box, :completed, data: { action: 'autosave#save' } %>
+  <%= f.submit "Save Template", class: "create" %>
 <% end %>
