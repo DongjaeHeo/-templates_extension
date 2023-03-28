@@ -1,0 +1,82 @@
+
+.cards-container {
+  background-color: whitesmoke;
+  height: 35vh;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  background: transparent;
+  .info-card {
+    height: 225px;
+    width: 190px;
+    border-radius: 24px;
+    // overflow: hidden;
+    // box-shadow: 1px 1px 20px -2px rgba(93, 93, 93, 0.6);
+    font-size: 1.3em;
+    color: $purple;
+
+    .card-number {
+      text-align: center;
+      h1 {
+        font-size: 110px;
+        text-shadow: 2px 3px 5px;
+      }
+    }
+
+    .card-text {
+      text-align: center;
+      p {
+        font-family: 'Nunito', sans-serif;
+        margin: 8px;
+        // text-shadow: 0px 1px 3px;
+      }
+    }
+  }
+}
+
+.secondary-content {
+  width: 55%;
+  margin-bottom: 0px;
+  margin: 16px auto;
+  text-align: center;
+  padding: 8px;
+  color: $purple;
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+// FLIP ANIMATION FOR CARDS
+.card-wrapper {
+  position: relative;
+  border-radius: 24px;
+  // overflow: hidden;
+  box-shadow: 1px 1px 20px -2px #604fb270;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.25s;
+  transform-style: preserve-3d;
+}
+
+.info-card:hover .card-wrapper {
+  transform: rotateY(180deg);
+
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: whitesmoke;
+  color: $purple;
+  border-radius: 24px;
+  transform: rotateY(180deg);
+  padding: 8px;
+}
