@@ -1,13 +1,10 @@
-<div class="d-flex mt-4">
+<div class="d-flex">
   <div class="menu">
-    <div class="new-category mt-4">
-      <%= render 'categories/form', category: @category%>
-    </div>
-    <br>
-    <br>
-    <h5 class="workspace-header">Your categories</h5>
     <div class="template-list">
       <%= render 'workspaces/template_menu', categories: @categories %>
+    </div>
+    <div class="new-category mt-4">
+      <%= render 'categories/form', category: @category%>
     </div>
   </div>
   <div class="content">

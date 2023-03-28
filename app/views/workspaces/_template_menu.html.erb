@@ -22,7 +22,7 @@
             <li>
             <div class="d-flex justify-content-between">
               <%= link_to edit_template_path(template), data: {turbo_frame: :workspace_content}  do %>
-                <%= template.title %>
+                <div class="template-item"><%= template.title %></div>
               <% end %>
             <br>
               <%= link_to edit_template_path(template), data: {turbo_frame: :workspace_content}  do %>
