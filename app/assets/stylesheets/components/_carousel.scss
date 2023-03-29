@@ -1,6 +1,6 @@
 .image-carousel {
-  width: 400px;
-  height: 250px;
+  width: 550px;
+  height: 310px;
   margin: 40px;
   position: relative;
 }
@@ -16,6 +16,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .carousel-track {
