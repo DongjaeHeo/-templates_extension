@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
     if @category.save
       redirect_to workspace_path
     else
-      render :new, status: :unprocessable_entity
+      render status: :unprocessable_entity
     end
   end
 
