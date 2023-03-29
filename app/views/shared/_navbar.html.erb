@@ -1,8 +1,13 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
+<<<<<<< HEAD
     <%= link_to "#", class: "navbar-brand" do %>
       <%# <%= image_tag "https://cdn-icons-png.flaticon.com/512/7182/7182918.png" %>
       <i class="fa-regular fa-message"></i>
+=======
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "te-logo-main.png" %>
+>>>>>>> d15d8134b4123f0cf9e63b18643a82ea8444a6a1
     <% end %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,6 +15,14 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<<<<<<< HEAD
+=======
+    <% if current_user.present? %>
+      <div class="user-name p-3">
+        <%= current_user.first_name %>
+      </div>
+    <% end %>
+>>>>>>> d15d8134b4123f0cf9e63b18643a82ea8444a6a1
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <%# <li class="nav-item active">

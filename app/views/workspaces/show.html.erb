@@ -1,21 +1,22 @@
 <div class="d-flex workspace-content">
   <div class="menu">
-    <div class="template-list">
-      <%= render 'workspaces/template_menu', categories: @categories %>
-    </div>
-    <br>
-    <br>
-    <div data-controller="toggle">
-      <button type="button" class="btn btn-primary" data-action="click->toggle#open_form"><i class="fa-solid fa-plus"></i> Create Category</button>
+    <div data-controller="toggle" class="pb-5">
+      <button type="button" class="btn" data-action="click->toggle#open_form"><i class="fa-solid fa-plus"></i> Create Category</button>
       <div class="d-none new-category mt-4" data-toggle-target="form">
         <%= render 'categories/form', category: @category%>
       </div>
     </div>
+    <div class="template-list">
+      <%= render 'workspaces/template_menu', categories: @categories %>
+    </div>
+    <%# <br>
+    <br> %>
   </div>
   <div class="content">
     <%= turbo_frame_tag :workspace_content do %>
       <%= render 'templates/form', template: @template, category: nil %>
     <% end %>
   </div>
+  <div class="spacing">
+  </div>
 </div>
-<br>
