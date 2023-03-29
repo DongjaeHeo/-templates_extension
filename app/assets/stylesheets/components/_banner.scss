@@ -1,14 +1,14 @@
 .main-banner {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   // POSITIONING!!
   // position: sticky;
   // top: 0;
 
   width: 100%;
-  height: 350px;
-  // background-color: $purple;
+  height: 370px;
+
   background: linear-gradient(62deg, rgba(96,79,178,1) 40%, rgba(174,154,196,1) 100%);
   // BACKGROUND IMAGE
   // background-image: image-url('abstr_bubble.jpg');
