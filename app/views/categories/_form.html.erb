@@ -2,3 +2,5 @@
   <%= f.input :title, placeholder: "Category title", label: false %>
   <%= f.submit "Add", class: "submit" %>
 <% end %>
+
+<%# data: { controller: :form, action: "turbo:submit-end->form#clear" } %>

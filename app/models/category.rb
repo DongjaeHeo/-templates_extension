@@ -6,6 +6,7 @@ class Category < ApplicationRecord
   has_many :templates, dependent: :destroy
 
   validates :title, presence: true
+  validates :title, length: { maximum: 30 }
 
   before_destroy :can_update_or_destroy?
   before_update :can_update_or_destroy?
