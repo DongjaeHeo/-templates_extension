@@ -5,11 +5,12 @@
   max-width: 300px;
   padding: 1rem;
   color: #604fb2;
+  font-size: 20px;
   // text-shadow: 0px 0px 4px #545454;
   .fa-solid {
     color: #604fb2;
     padding: 1px;
-    font-size: 12px;
+    font-size: 15px;
     margin-right: 8px;
   }
 }
@@ -40,7 +41,7 @@
 }
 
 a {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .form-select {
@@ -66,7 +67,7 @@ ul {
   border: none;
   color: #604fb2;
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
   padding-left: 0;
   width: 100%;
 }
@@ -82,7 +83,7 @@ ul {
 
 .submit {
   border-radius: 10px;
-  background-color: transparent;
+  // background-color: transparent;
   color: white;
   border-color: white;
   width: 35%;
@@ -97,11 +98,13 @@ ul {
 
 .create {
   border-radius: 10px;
-  background-color: transparent;
-  color: #313131;
-  border-color: #313131;
+  // background-color: transparent;
+  color: white;
+  background-color: $purple;
+  border: 2px solid $purple;
   font-size: 15px;
   border-width: 1px;
+  padding: 6px 13px;
 }
 
 .templates-list {
