@@ -1,5 +1,5 @@
 meta_name: "Templates extension"
 meta_title: "Templates extension - All your templates. Anywhere."
 meta_description: "Access all your templates anywhere"
-meta_image: "te-logo-main.png" # should exist in `app/assets/images/`
+meta_image: "og-image.jpg" # should exist in `app/assets/images/`
 # twitter_account: "@your_twitter_account" # required for Twitter Cards
