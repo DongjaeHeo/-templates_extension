@@ -15,7 +15,7 @@ class User < ApplicationRecord
   acts_as_token_authenticatable
   def create_default_category
     @category = Category.create(title: Category::DEFAULT_NAME, user: self)
-    Template.create(title: "Example template", category: @category, content: "<div>Hello</div>")
+    Template.create(title: "Generic Happy Birthday", category: @category, content: "<div>Hello, and a very <strong>happy birtday to you</strong>! I'm wishing you all the best for the day - how are you celebrating? Let's meet up soon, drinks are on me! Lots of love x</div>")
   end
 
   def set_destroyed_by_parent
