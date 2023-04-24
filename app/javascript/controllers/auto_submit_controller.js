@@ -49,8 +49,9 @@ export default class extends Controller {
   // submit the form
   saveForm() {
     // console.log(this.element);
-    let trix = document.querySelector("#edit_template_19");
-    // console.log(trix);
-    trix.requestSubmit();
+
+    const cl = document.querySelector(".edit_template");
+    // console.log(cl);
+    cl.requestSubmit();
   }
 }
