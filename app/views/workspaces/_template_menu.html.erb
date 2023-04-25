@@ -16,7 +16,7 @@
 
 
       <div class="d-none" data-toggle-target="list">
-        <% category.templates.each do |template| %>
+        <% category.templates.order("updated_at DESC").each do |template| %>
           <ul>
             <li>
             <div class="d-flex justify-content-between gap-8 templates-list">
