@@ -39,19 +39,12 @@ export default class extends Controller {
     clearInterval(this.intervalID);
   }
 
-  // sleep(milliseconds) {
-  //   const date = Date.now();
-  //   let currentDate = null;
-  //   do {
-  //     currentDate = Date.now();
-  //   } while (currentDate - date < milliseconds);
-  // }
   // submit the form
   saveForm() {
     // console.log(this.element);
 
-    const cl = document.querySelector(".edit_template");
-    // console.log(cl);
-    cl.requestSubmit();
+    const templatesForm = document.querySelector(".edit_template");
+    // console.log(templatesForm);
+    templatesForm.requestSubmit();
   }
 }
