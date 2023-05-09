@@ -1,4 +1,3 @@
-
 .cards-container {
   background-color: whitesmoke;
   width: 85%;
@@ -27,7 +26,7 @@
     .card-text {
       text-align: center;
       p {
-        font-family: 'Nunito', sans-serif;
+        font-family: "Nunito", sans-serif;
         margin: 8px;
         // text-shadow: 0px 1px 3px;
       }
@@ -47,7 +46,9 @@
   font-weight: bold;
 }
 
-.fa-file-pen, .fa-cloud-arrow-down, .fa-file-import {
+.fa-file-pen,
+.fa-cloud-arrow-down,
+.fa-file-import {
   font-size: 115px;
   margin: 16px 0;
 }

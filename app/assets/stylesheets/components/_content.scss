@@ -1,0 +1,49 @@
+.purple-background {
+  background-color: $purple;
+}
+.light-background {
+  background-color: $navbarpurple;
+}
+.font-white {
+  color: white;
+}
+.content-container-right {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+  font-family: "Nunito", sans-serif !important;
+  h1 {
+    padding-left: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  strong {
+    font-size: 22px;
+  }
+}
+
+.content-container-left {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  justify-content: flex-start;
+  background: transparent;
+  font-family: "Nunito", sans-serif !important;
+  h1 {
+    padding-left: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+  strong {
+    font-size: 22px;
+  }
+}
+.content-card {
+  width: 60%;
+}
